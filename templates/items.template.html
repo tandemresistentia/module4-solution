@@ -1,0 +1,11 @@
+﻿<div class="items">
+    <h2>Menu Items for Category: {{ $ctrl.category.name }}</h2>
+    <ul>
+        <li ng-repeat="item in $ctrl.items">
+            <h3>{{ item.name }} ({{ item.short_name }})</h3>
+            <p>{{ item.description }}</p>
+            <p class="price">Price: ${{ item.price_large }}</p>
+        </li>
+    </ul>
+    <a ui-sref="categories" class="button">Back to Categories</a>
+</div>
